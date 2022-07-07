@@ -1,0 +1,26 @@
+{
+   "type": "mysql",
+   "host": "192.168.100.252",
+   "port": 3306,
+   "username": "apidev_hpl",
+   "password": "ialL2XAXpSklAUZWjBsw",
+   "database": "apidev_hpl",
+   "synchronize": false,
+   "logging": false,
+   "entities": [
+      "/webroot/apidev-hpl.ugame.vn/current/build/entity/**/*.js",
+      "/webroot/apidev-hpl.ugame.vn/current/build/entity/*.js",
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",  
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
